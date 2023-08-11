@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(#fff3e0, #eae3dc);
+    min-height: 100vh;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'merienda', 'cursive';
+}
+
+.main img{
+    width: 25%;
+    margin-top: 15px;
+}
+
+.main h1{
+    font-size: 2.7rem;
+    color: rgb(124, 7, 7);
+    margin-top: 20px;
+    letter-spacing: 0.09em;
+    white-space: nowrap;
+}
+
+.container{
+    display: flex;
+    margin:10px;
+}
+
+.container h1{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    letter-spacing: 0.09em;
+    color: rgb(160, 4, 4);
+}
+
+.container .ingredients{
+    width: 40%;
+    text-align: center;
+    padding: 0 30px;
+    margin-left: 28px;
+}
+
+.container .recipe{
+    width: 60%;
+    text-align: center;
+    padding: 0 30px;
+}
+
+.container .ingredients h1{
+    margin-left: -15%;
+}
+
+.container ul li{
+    text-align: start;
+    list-style:circle;
+    color: rgb(83, 0, 0);
+    padding: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    word-spacing: 0.3em;
+}
+
+@media(max-width:950px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .ingredients{
+        width: 80%;
+        text-align: center;
+        padding: 0 30px;
+        margin-left: 28px;
+    }
+    
+    .container .recipe{
+        width: 80%;
+        text-align: center;
+        padding: 0 30px;
+    }
+    .container .ingredients h1{
+        margin-top: 15px;
+        margin-left: 0;
+    }
+    .main img{
+        width: 33%;
+    }
+}
+
+@media(max-width:512px){
+    .main h1{
+        font-size: 2rem;
+    }
+    .container h1{
+        font-size: 1.5rem;
+    }
+    .container ul li{
+        font-size: 0.9rem;
+    }
+    .main img{
+        width: 50%;
+    }
+}
